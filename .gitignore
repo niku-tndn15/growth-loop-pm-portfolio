@@ -210,4 +210,8 @@ __marimo__/
 # Node Modules
 node_modules/
 
+<<<<<<< HEAD
 .claude/
+=======
+.claude/
+>>>>>>> b842c3078ed23f0e286bf35d2a5ce55f83a25662

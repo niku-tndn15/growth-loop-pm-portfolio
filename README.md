@@ -1,46 +1,56 @@
-# Growth Loop Portfolio — PM Case Study
 
-A full-stack, interactive PM Portfolio web application presenting a **Growth Loop Design for a B2C App** as a live, data-rich dashboard.
+# 🚀 Growth Loop Portfolio: B2C Growth Engineering Case Study
 
-## Tech Stack
+A full-stack Product Management application that transforms a "leaky" acquisition funnel into a compounding growth engine. This tool models the transition from high-cost paid ads to a self-sustaining referral system.
 
-- **Frontend:** React + Tailwind CSS + Recharts
-- **Backend:** Node.js + Express
-- **Database:** SQLite (via better-sqlite3) — mock data seeded on first run
+## 📈 Strategic Impact
+* **Reduced CAC:** Models a reduction in Customer Acquisition Cost from **$18.40** to **$11.20**.
+* **Virality Modeling:** Leverages the **K-factor** formula to predict organic growth:
+    $$K = i \times c$$
+    *(Where $i$ = invites sent and $c$ = conversion rate)*.
+* **LTV Lift:** Demonstrates a **74% higher Lifetime Value** for referred users compared to paid cohorts.
 
-## Setup & Run
 
+---
+
+## 🛠️ The Tech Stack
+* **Frontend:** React (Vite) + Tailwind CSS + Recharts for interactive analytics.
+* **Backend:** Node.js + Express REST API.
+* **Database:** SQLite for persistent storage of calculator inputs.
+
+---
+
+## 🧩 Core Modules
+| Module | PM Objective | Key Feature |
+| :--- | :--- | :--- |
+| **Growth Loop Designer** | Build compounding virality  | Interactive SVG Loop + K-Factor Slider  |
+| **Acquisition Funnel** | Identify the "Leaky Bucket"  | Drop-off visualization with red-flagging  |
+| **Cohort Analysis** | Prove long-term retention  | Shaded area retention curves (Referred vs. Paid)  |
+| **LTV:CAC Model** | Validate unit economics  | Interactive scenario modeling (Baseline vs. Loop)  |
+| **Roadmap & Metrics** | Manage execution & risk  | CSS Gantt Chart + A/B Test Design Cards  |
+
+---
+
+## ⚡ Quick Start
 ```bash
-# Install all dependencies
+# Install dependencies for both Client & Server
 npm run install:all
 
-# Start both server and client (concurrent)
+# Launch the full-stack environment
 npm run dev
 ```
+*App launches at `http://localhost:5173`. API runs on port `3001`.*
 
-The app will be available at `http://localhost:5173` (frontend) with API on port `3001`.
+---
 
-## Tab Overview
+## 🌟 Key Features
+* **Persistence:** All calculator values saved to SQLite via REST API.
+* **UX Excellence:** Skeleton loaders, responsive design, and floating "Portfolio Context" modal.
+* **Stakeholder Ready:** Print-optimized CSS for clean PDF exports.
 
-| Tab | Description |
-|-----|-------------|
-| **Executive Summary** | Hero KPIs, problem/hypothesis statements, project phase table, PDF download |
-| **Acquisition Funnel** | Funnel visualization, channel breakdown with LTV:CAC color coding, leaky bucket insight |
-| **Growth Loop Designer** | Interactive SVG loop diagram, 4 component detail cards, live K-factor calculator with sliders |
-| **Referral Mechanics** | Referral economics calculator, program design table, fraud risk framework |
-| **Cohort Analysis** | Retention curves, LTV curves (referred vs paid), cohort comparison table, insight cards |
-| **LTV:CAC Model** | Interactive calculator with baseline vs loop comparison, scenario table, payback period chart |
-| **Roadmap & Metrics** | CSS Gantt chart (clickable phases), metrics framework, A/B test designs, risk register |
+---
 
-## Features
+### Author
+**Nikunj Tandan** - *Product Management & Growth Engineering*
 
-- All interactive calculators persist values to SQLite via REST API
-- Responsive design with mobile-friendly layout
-- Print-optimized CSS for PDF export
-- Floating "Portfolio Context" modal with project background
-- Skeleton loaders for graceful loading states
-- Color-coded metrics and KPIs throughout
-
-## Author
-
-Built by **Nikunj Tandan** as a product management portfolio piece.
+---
