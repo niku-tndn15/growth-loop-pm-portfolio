@@ -209,3 +209,5 @@ __marimo__/
 
 # Node Modules
 node_modules/
+
+.claude/
